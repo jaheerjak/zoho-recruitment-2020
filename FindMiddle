@@ -1,0 +1,33 @@
+public class FindMiddle{
+public static void main(String[] args) {
+String ipt="WELCOME";
+int ilen=ipt.length;
+int empty=ipt.length;
+String chars="";
+for(int i = ilen/2 ; i< ilen ;i++){
+            for(int j = 0; j < empty; j++){
+                System.out.print(" ");
+            }
+            chars += ipt.charAt(i);
+            System.out.println(chars);
+            empty--;
+        }
+        for(int i = 0 ; i< ilen/2 ;i++){
+            for(int j = 0; j < empty; j++){
+                System.out.print(" ");
+            }
+            chars += ipt.charAt(i);
+            System.out.println(chars);
+            empty--;
+        }
+}
+}
+Output:
+ 
+                     C
+                 C O
+              C O M
+           C O M E
+       C O M E W
+   C O M E W E
+C O M E W E L
